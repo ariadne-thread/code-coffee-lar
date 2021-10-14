@@ -19,6 +19,4 @@ Route::get('/', CoffeeController::class);
 
 Route::get('products/insert', [ProductController::class, 'create']);
 
-Route::get('products/{name}/{value?}', [ProductController::class, 'show']);
-
 Route::get('products', [ProductController::class, 'index']);
