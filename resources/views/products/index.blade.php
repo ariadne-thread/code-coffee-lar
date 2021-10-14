@@ -8,7 +8,7 @@
     <a href="products/insert" button type="button" class="mt-4 mb-4 btn btn-primary">Insert</button></a>
     <hr>
     @foreach($products as $product)
-    <p class="text-center">{{$product->name}}</p>
+    <p>{{$product->name}}</p>
     @endforeach
     {{$products->links()}}
 </div>
