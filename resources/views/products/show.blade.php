@@ -1,6 +1,11 @@
 @extends('layouts.template')
-@section('title', 'CodeCoffeeLar')
+@section('title', 'Show Product')
 @section('content')
-    <h2 class="text-center">Product Description</h2>
-    <p class="text-center">This is your <?php echo $id ?> "ID" product.</p>
+    <div class="jumbotron">
+        <h1 class="display-4"><?php echo $product->name; ?></h1>
+        <p class="lead"><?php echo $product->description; ?> - <?php echo $product->value; ?> in your home stock.</p>
+        <hr class="my-4">
+        <p><?php echo $product->long_description; ?></p>
+        <a class="btn btn-primary btn-lg" href="{{route('products')}}" role="button">Learn more</a>
+      </div>
 @endsection
