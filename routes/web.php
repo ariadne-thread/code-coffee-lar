@@ -19,4 +19,6 @@ Route::get('/', CoffeeController::class);
 
 Route::get('products/insert', [ProductController::class, 'create'])->name('products.insert');
 
+Route::get('products/{id}', [ProductController::class, 'show'])->name('products.description');
+
 Route::get('products', [ProductController::class, 'index'])->name('products');

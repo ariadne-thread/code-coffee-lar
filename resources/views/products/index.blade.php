@@ -28,7 +28,7 @@
                 <td>{{$product->description}}</td>
                 <td>{{$product->value}}</td>
                 <td>
-                <i class="fas fa-eye"></i>
+                <a href="{{route('products.description', $product->id)}}"><i class="fas fa-eye text-primary"></i>
                 </td>
             </tr>
             @endforeach
