@@ -28,9 +28,9 @@
                 <td>{{$product->description}}</td>
                 <td>{{$product->value}}</td>
                 <td>
-                <a href="{{route('products.description', $product->id)}}"><i class="fas fa-eye text-primary"></i>
-                <a href="{{route('products.description', $product->id)}}"><i class="fas fa-edit text-info"></i>
-                <a href="{{route('products.description', $product->id)}}"><i class="fas fa-trash-alt text-danger"></i>
+                <a title="Show Product" href="{{route('products.description', $product->id)}}"><i class="fas fa-eye text-primary mr-2"></i>
+                <a title="Edit Product" href="{{route('products.description', $product->id)}}"><i class="fas fa-edit text-info mr-2"></i>
+                <a title="Delete Product" href="{{route('products.description', $product->id)}}"><i class="fas fa-trash-alt text-danger mr-2"></i>
                 </td>
             </tr>
             @endforeach

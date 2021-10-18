@@ -6,6 +6,6 @@
         <p class="lead"><?php echo $product->description; ?> - <?php echo $product->value; ?> in your home stock.</p>
         <hr class="my-4">
         <p><?php echo $product->long_description; ?></p>
-        <a class="btn btn-primary btn-lg" href="{{route('products')}}" role="button">Learn more</a>
+        <a class="btn btn-primary btn-lg" href="{{route('products')}}" role="button">Products</a>
       </div>
 @endsection
