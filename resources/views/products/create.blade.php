@@ -1,21 +1,29 @@
 @extends('layouts.template')
 @section('title', 'Products Page')
 @section('content')
+    <h2 class="text-center">Insert a Product</h2>
     <div class="container">
         <form method="post" actions="{{route('products.insert')}}">
             <div class="form-group">
               <label for="exampleInputEmail1">Product Name</label>
-              <input type="text" class="form-control" id="" name="name">
+              <input type="text" class="form-control" id="" name="name" placeholder="Name (ex.: Arabica)">
             </div>
             <div class="form-group">
-              <label for="exampleInputEmail1">in Stock</label>
-              <input type="text" class="form-control" id="" name="name">
+              <label for="exampleFormControlSelect1">Description</label>
+              <select class="form-control" id="" name="description"> 
+                <option>Capsule</option>
+                <option>In Bulk</option>
+              </select>
             </div>
             <div class="form-group">
-              <label for="exampleFormControlTextarea1">Description</label>
-              <textarea class="form-control" id="" name="description" rows="3"></textarea>
+              <label for="exampleInputEmail1">Stock</label>
+              <input type="text" class="form-control" id="" name="value" placeholder="Quantity in stock (ex.: 10)">
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Detailed Product Description</label>
+              <textarea class="form-control" id="" name="long-description" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Insert</button>
           </form>
     </div>
 @endsection
