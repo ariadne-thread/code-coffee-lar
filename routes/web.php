@@ -17,6 +17,6 @@ use App\Http\Controllers\ProductController;
 
 Route::get('/', CoffeeController::class);
 
-Route::get('products/insert', [ProductController::class, 'create']);
+Route::get('products/insert', [ProductController::class, 'create'])->name('products.insert');
 
-Route::get('products', [ProductController::class, 'index']);
+Route::get('products', [ProductController::class, 'index'])->name('products');

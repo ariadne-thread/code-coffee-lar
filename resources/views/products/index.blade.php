@@ -4,7 +4,7 @@
 
 <div class="container">
 
-<a href="products/insert" button type="button" class="mt-4 mb-4 btn btn-primary">Insert Product</button></a>
+<a href="{{route('products.insert')}}" button type="button" class="mt-4 mb-4 btn btn-primary">Insert Product</button></a>
 
 <!-- DataTales -->
 <div class="card shadow mb-4">
@@ -27,7 +27,9 @@
                 <td>{{$product->name}}</td>
                 <td>{{$product->description}}</td>
                 <td>{{$product->value}}</td>
-                <td></td>
+                <td>
+                <i class="fas fa-eye"></i>
+                </td>
             </tr>
             @endforeach
           </tbody>
