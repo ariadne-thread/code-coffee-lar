@@ -4,8 +4,7 @@
 
     <h2 class="text-center">Insert a Product</h2>
     <div class="container">
-        <form method="POST" action="{{route('insert.products
-        ')}}">
+        <form method="POST" action="{{route('insert.products')}}">
         @csrf
             
             <div class="form-group">
