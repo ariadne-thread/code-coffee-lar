@@ -9,12 +9,6 @@
 
 ##
     
-> <h4>STATE OF ART:</h4>
+> <h4>CHANGELOG</h4>
 > 
-> STAGE:
-> - Creating routes for CRUD contrlollers and views
-> - Setting defaults in template.blade
-> 
-> BUGS:
-> - Need to correct the view of controllers show only with the parameter $name
-> - Resolve error in Netlify hosting or hosting on Heroku
+>(under creation)

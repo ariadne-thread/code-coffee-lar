@@ -16,6 +16,16 @@ class ProductController extends Controller
         return view('products.create');
     }
 
+    public function insert(Request $request){
+        $product = new Product();
+        $product->name = $request->name;
+        $product->description = $request->description;
+        $product->value = $request->value;
+        $product->long_description = $request->long_description;
+        $product->save();
+        return redirect()->route('products');
+    } 
+
     public function show($id){
         $product = Product::find($id);
         return view('products.show', ['product' => $product]);

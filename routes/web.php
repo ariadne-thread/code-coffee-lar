@@ -22,3 +22,5 @@ Route::get('products/insert', [ProductController::class, 'create'])->name('produ
 Route::get('products/{name}', [ProductController::class, 'show'])->name('products.description');
 
 Route::get('products', [ProductController::class, 'index'])->name('products');
+
+Route::POST('products', [ProductController::class, 'insert'])->name('insert.products');
