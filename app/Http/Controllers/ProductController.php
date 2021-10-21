@@ -43,4 +43,9 @@ class ProductController extends Controller
         $product->save();
         return redirect()->route('products');
     } 
+
+    public function delete(product $product){
+        $product->delete();
+        return redirect()->route('products');
+    }
 }

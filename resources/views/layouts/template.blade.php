@@ -49,6 +49,11 @@
   </nav>
     @yield('content')
 </body>
+<footer class="fixed w-full bg-light static bottom-0">
+  <div class="container flex flex-col items-center py-2 mx-auto lg:justify-between"></div> 
+    <p class="text-sm text-center text-gray-500 dark:text-gray-300">© 2021 CRUD Laravel Developed by Camila Cestari Cerreti</p> 
+  </div>
+</footer>
 </html>
 
     <!-- Scripts DataTables -->

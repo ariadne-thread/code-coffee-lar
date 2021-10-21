@@ -28,3 +28,5 @@ Route::POST('products', [ProductController::class, 'insert'])->name('insert.prod
 Route::get('products/{product}/edit', [ProductController::class, 'edit'])->name('products.edit');
 
 Route::PUT('products/{product}', [ProductController::class, 'editing'])->name('products.editing');
+
+Route::delete('products/{product}/delete', [ProductController::class, 'delete'])->name('products.delete');
