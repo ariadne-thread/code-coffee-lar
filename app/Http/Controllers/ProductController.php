@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class ProductController extends Controller
 {
     public function index(){  
-        $products = product::paginate();
+        $products = product::all();
         return view('products.index', ['products' => $products]);
     }
 
@@ -30,4 +30,17 @@ class ProductController extends Controller
         $product = Product::find($id);
         return view('products.show', ['product' => $product]);
     }
+
+    public function edit(product $product){
+        return view('products.edit', ['product' => $product]);
+    }
+
+    public function editing(Request $request, product $product){
+        $product->name = $request->name;
+        $product->description = $request->description;
+        $product->value = $request->value;
+        $product->long_description = $request->long_description;
+        $product->save();
+        return redirect()->route('products');
+    } 
 }

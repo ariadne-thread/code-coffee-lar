@@ -1,5 +1,5 @@
 @extends('layouts.template')
-@section('title', 'Products Page')
+@section('title', 'Insert Page')
 @section('content')
 
     <h2 class="text-center">Insert a Product</h2>
